@@ -1,0 +1,51 @@
+﻿@model Digital.Ventures.Web.Models.PlayersViewModel
+
+@{
+    ViewData["Title"] = "Search";
+}
+
+<h2>Search</h2>
+
+<form asp-controller="Player" asp-action="Search">
+    <p>
+        Name: <input type="text" name="SearchString">
+        <input type="submit" value="Filter" />
+    </p>
+</form>
+
+@if (Model != null)
+{
+    <table id="players" class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Country</th>
+                <th>Birth Date</th>
+                <th>Edit</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model.Players != null)
+            {
+                @foreach (var player in Model.Players)
+                {
+                    <tr>
+                        <td>@player.Name</td>
+                        <td>@player.Country</td>
+                        <td>@player.BirthDate.ToShortDateString()</td>
+                        <td>@Html.ActionLink("Edit", "EditPlayer", new { @player.Id })</td>
+                    </tr>
+                }
+            }
+</table>
+}
+else
+{
+    <p>No results found</p>
+}
+
+<script>
+    $(document).ready(function () {
+        $("#players").DataTable()
+    });
+</script>

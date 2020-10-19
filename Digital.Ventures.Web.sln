@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.489
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Digital.Ventures.Web", "Digital.Ventures.Web\Digital.Ventures.Web.csproj", "{B42AEC25-6DF9-4D33-97A3-6E563174EB5D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Digital.Ventures.Data", "Digital.Ventures.Data\Digital.Ventures.Data.csproj", "{D20378B7-F83C-4890-BEEF-C61D5CA87357}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B42AEC25-6DF9-4D33-97A3-6E563174EB5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B42AEC25-6DF9-4D33-97A3-6E563174EB5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B42AEC25-6DF9-4D33-97A3-6E563174EB5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B42AEC25-6DF9-4D33-97A3-6E563174EB5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D20378B7-F83C-4890-BEEF-C61D5CA87357}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D20378B7-F83C-4890-BEEF-C61D5CA87357}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D20378B7-F83C-4890-BEEF-C61D5CA87357}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D20378B7-F83C-4890-BEEF-C61D5CA87357}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9E132FEF-E39D-4665-972B-9DBC1F9F4EB7}
+	EndGlobalSection
+EndGlobal
